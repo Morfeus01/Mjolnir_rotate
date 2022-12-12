@@ -32,7 +32,7 @@ const scene = new Scene(engine);
 
 const camera = new DeviceOrientationCamera(
   "kamera",
-  new Vector3(201, 90, 90),
+  new Vector3(200, 90, 90),
   scene
 );
 
@@ -46,7 +46,7 @@ var i = 0;
 for (i = 0; i < 3; i++) {
   var sphere = MeshBuilder.CreateCylinder(
     "freza",
-    //{ diameter: 0.0000001, height: 3 },
+    { diameter: 0.0000001, height: 0.0001 },
     scene
   );
   sphere.position.x = i;
